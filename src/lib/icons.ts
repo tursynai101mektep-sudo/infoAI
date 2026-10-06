@@ -1,0 +1,50 @@
+import {
+  Code2,
+  Layers,
+  GitBranch,
+  Network,
+  Shield,
+  Lock,
+  Database,
+  Table2,
+  Radio,
+  Wifi,
+  BrainCircuit,
+  Sparkles,
+  Terminal,
+  CheckCircle2,
+  Flame,
+  Star,
+  Target,
+  Crown,
+  Bot,
+  Trophy,
+  type LucideIcon,
+} from "lucide-react";
+
+const MAP: Record<string, LucideIcon> = {
+  python: Code2,
+  layers: Layers,
+  "git-branch": GitBranch,
+  network: Network,
+  shield: Shield,
+  lock: Lock,
+  database: Database,
+  table: Table2,
+  radio: Radio,
+  wifi: Wifi,
+  brain: BrainCircuit,
+  sparkles: Sparkles,
+  terminal: Terminal,
+  check: CheckCircle2,
+  flame: Flame,
+  star: Star,
+  target: Target,
+  crown: Crown,
+  bot: Bot,
+  trophy: Trophy,
+};
+
+export function getIcon(key: string): LucideIcon {
+  return MAP[key] ?? Code2;
+}
